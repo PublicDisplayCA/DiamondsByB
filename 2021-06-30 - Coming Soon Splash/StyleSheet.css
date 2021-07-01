@@ -1,0 +1,140 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background-color: black;
+	z-index: 0;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+	text-decoration: none;
+}
+/*************** CODE STARTS HERE ************************/
+
+body {
+	text-align: center;
+	font-family: 'Playfair Display', serif;	
+
+/*	background-image: url("resources/bg_ComingSoon2.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;*/
+}
+
+.bg_image::before {
+	z-index: -1;
+	content: "";
+  /* The image used */
+	background-image: url("resources/bg_ComingSoon1.jpg");
+
+  /* Position and size setup */
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Add the blur effect */
+/*  filter: blur(3px);
+  -webkit-filter: blur(3px);
+  backdrop-filter: blur(3px);*/
+
+  filter: opacity(40%);
+  -webkit-filter: opacity(40%);
+  backdrop-filter: opacity(40%);
+}
+
+
+#coming_soon {
+	margin-top: 5vw;
+}
+#coming_soon > p {
+	text-align: center;
+	color: #E3BD82;
+	font-size: 3.5vw;
+}
+
+
+#splash_logo > img {
+	width: 35vw;
+	padding: 0;
+	margin: 0;
+}
+
+
+#links > ul {
+	list-style-type: none;
+	padding: 0;
+	margin-top: -3vw;
+}
+#links > ul > li {
+  display: inline;
+  padding: 5px;
+  margin-left: 35px;
+}
+#links > ul > li > a > img {
+	height: 3vw;
+	width: 3vw;
+}
+
+
+footer > #pb_tag > p {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	font-size: .4vw;
+	font-family: 'Didact Gothic', sans-serif;
+	color: white;
+	opacity: 8.6%;
+}
+footer > #pb_tag > p > a {
+	color: #FF0000;
+}

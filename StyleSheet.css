@@ -56,7 +56,7 @@ a {
 
 body {
 	text-align: center;
-	font-family: 'Playfair Display', serif;	
+	font-family: 'Playfair Display', serif;
 
 /*	background-image: url("resources/bg_ComingSoon2.jpg");
 	background-position: center;
@@ -72,14 +72,19 @@ body {
 
   /* Position and size setup */
 	position: absolute;
+  background-position: center;
 	top: 0;
 	left: 0;
-	width: 100%;
+/*	width: auto;*/
+	width: 100vw;
 	height: 100%;
+	/*height: 100vh;*/
+	/*max-height: 100%;*/
 
   /* Center and scale the image nicely */
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
 
   /* Add the blur effect */
@@ -94,35 +99,44 @@ body {
 
 
 #coming_soon {
-	margin-top: 5vw;
+	margin-top: 7vh;
 }
 #coming_soon > p {
 	text-align: center;
 	color: #E3BD82;
-	font-size: 3.5vw;
+	font-size: 6vh;
 }
 
 
 #splash_logo > img {
-	width: 35vw;
+	width: 70vh;
+	max-width: 100%;
 	padding: 0;
 	margin: 0;
 }
 
 
 #links > ul {
+	display: inline-block;
 	list-style-type: none;
 	padding: 0;
-	margin-top: -3vw;
+
+	text-align: center;
+  list-style: inside;
+
+  width: 70%;
+  margin: auto;
+	margin-top: -3vh;
 }
 #links > ul > li {
-  display: inline;
-  padding: 5px;
-  margin-left: 35px;
+  display: inline-block;
+
+  padding: 2vh;
+/*  margin-left: 8vh;*/
 }
 #links > ul > li > a > img {
-	height: 3vw;
-	width: 3vw;
+	height: 7vh;
+	width: 7vh;
 }
 
 
@@ -130,7 +144,7 @@ footer > #pb_tag > p {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-	font-size: .4vw;
+	font-size: 1vh;
 	font-family: 'Didact Gothic', sans-serif;
 	color: white;
 	opacity: 8.6%;

@@ -78,9 +78,8 @@ body {
 	position: absolute;
 	top: 0;
 	left: 0;
-/*	width: auto;*/
 	width: 100%;
-	/*height: 100%;*/
+	height: 100%;
 
   /* Center and scale the image nicely */
   background-position: center;
@@ -116,26 +115,18 @@ body {
 
 
 #links > ul {
-	display: inline-block;
 	list-style-type: none;
 	padding: 0;
-
-	text-align: center;
-  list-style: inside;
-
-  width: 70%;
-  margin: auto;
-	margin-top: -3vh;
+	margin-top: -3vw;
 }
 #links > ul > li {
-  display: inline-block;
-
-  padding: 2vh;
-/*  margin-left: 8vh;*/
+  display: inline;
+  padding: 5px;
+  margin-left: 35px;
 }
 #links > ul > li > a > img {
-	height: 7vh;
-	width: 7vh;
+	height: 3vw;
+	width: 3vw;
 }
 
 

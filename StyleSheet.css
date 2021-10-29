@@ -57,38 +57,48 @@ a {
 body {
 	font-family: 'Playfair Display', serif;
 	width: 100%;
+	min-width: 600px;
 }
 
 section {
 	font-family: 'Lato', sans-serif;
 	display: block;
+	width: 100%;
+	min-width: 600px;
 }
 
 hr {
-	border-color: #E3BD82;
+	color: #E3BD82;
+	background-color: #E3BD82;
+	height: .2vw;
+
 }
 hr, p {
-	margin-top: 2vh;
-	margin-bottom: 3vh;
+	width: 70%;
+	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
-	width: 60%;
 
-	font-size: 1.9vh;
+	margin-top: 2vw;
+	margin-bottom: 3vw;
+	/*width: 60%;*/
+
+	font-size: 1.8vw;
 	line-height: 1.2;
-	margin-left: 20%;
+	/*margin-left: 20%;*/
 }
 
 h1 {
-	padding-top: 10vh;
-	padding-bottom: 2vh;
+	padding-top: 10vw;
+	padding-bottom: 2vw;
 
-	margin-left: 20%;
-	margin-right: auto;
-	width: 60%;
+	/*margin-left: 20%;*/
+	/*margin-right: auto;*/
+	/*width: 60%;*/
+	text-align: center;
 
 	font-weight: bold;
-	font-size: 5vh;
+	font-size: 4vw;
 }
 
 h2 {
@@ -105,10 +115,10 @@ footer {
 	text-align: center;
 }
 footer > #pb_tag > p {
-	font-size: .4vw;
+	font-size: .5vw;
 	font-family: 'Didact Gothic', sans-serif;
 	color: white;
-	opacity: 12%;
+	opacity: 10%;
 }
 footer > #pb_tag > p > a {
 	color: #FF0000;
@@ -119,14 +129,15 @@ footer > #pb_tag > p > a {
 
 /*background for splash_logo section*/
 .bg_image::before {
+	width: 100%;
 	z-index: -1;
 	content: "";
   /* The image used */
 	background-image: url("resources/bg_ComingSoon1.jpg");
 
   /* Position and size setup */
-	position: absolute;
-	top: 0;
+	position: fixed;
+	top: 10vw;
 	left: 0;
 	width: 100%;
 	height: 100%;
@@ -158,26 +169,23 @@ header {
 
 
 #splash_logo {
-	height: 100vh;
-}
-
-#splash_logo {
+	height: 100vw;
 	text-align: center;
 }
 #splash_logo > img {
-	width: 18vh;
+	width: 20vw;
 	padding: 0;
-	padding-bottom: 3vh;
+	padding-bottom: 3vw;
 	margin: 0;
-	margin-bottom: 3vh;
+	margin-bottom: 3vw;
 }
 /*}
 #splash_logo > img {
-	width: 18vh;
+	width: 18vw;
 	padding: 0;
-	padding-bottom: 3vh;
+	padding-bottom: 3vw;
 	margin: 0;
-	margin-bottom: 3vh;
+	margin-bottom: 3vw;
 }*/
 
 
@@ -187,23 +195,18 @@ header {
 	background-color: white;
 	/*background-color: #E3BD82;*/
 	/*background-color: #9b9595;*/  /*light-ish grey*/
-	height: 70vh;
+	/*height: 150vw;*/
+	height: auto;
 
-	padding-bottom: 10vh;
+	padding-bottom: 5vw;
 }
 #about_B > p {
-	float: left;
-
-	width: 25%;
-	margin-left: 20%;
-	font-size: 2.1vh;
+	text-align: left;
 }
 #about_B > img {
-	float: right;
-
-	width: 32%;
-	/*height: 40vw;*/
-	margin-right: 20%;
+	display: block;
+  margin: 0 auto;
+	width: 50%;
 }
 
 
@@ -211,67 +214,69 @@ header {
 
 #services {
 	/*background-color: #E3BD82;*/
-	background-color: none;
+	/*background-color: black;*/
+	/*opacity: .8;*/
+  background: rgba(0, 0, 0, 0.85);
 	color: E3BD82;
 
 	height: auto;
-	padding-bottom: 10vh;
+	padding-bottom: 15vw;
 }
 #services > p {
-		font-size: 2.3vh;
+	/*font-size: 3.3vw;*/
+	/*padding-bottom: 5vw;*/
 }
 #services > p+h1 {
-	font-size: 4vh;
+	/*padding-bottom: 5vw;*/
+	font-size: 3vw;
 	text-align: center;
 }
 
 #services > #wordgrid {
 	text-align: center;
-	width: 70%;
-	margin-left: 15%;
+	width: 80%;
+	margin-left: 10%;
 	display: grid;
 	grid-template-columns: auto auto auto auto;
 	grid-gap: 15px;
 	padding: 15px;
+	padding-bottom: 5vw;
 }
 #services > #wordgrid > div {
-	border: 1px solid black;
+	border: none;
 	text-align: center;
 
-	font-size: 2vh;
+	font-size: 2.5vw;
 	font-style: italic;
 }
 
 #services > ul {
+	border: none;
 	display: contents;
 	text-align: center;
 }
 #services > li {
 	display: flex;
-	padding-left: 2vh;
-	padding-right: 2vh;
+	padding-left: 2vw;
+	padding-right: 2vw;
 }
-#services > img{
+/*#services > img{
 	margin-left: auto;
 	margin-right: auto;
 	width: 70%;
 	margin-left: 15%;
-}
+}*/
 
 #services > #grid {
-	text-align: center;
-	width: 70%;
-	margin-left: 15%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+
 	display: grid;
-	grid-template-columns: 23% 23% 23% 23%;
-	grid-template-rows: 30vh 20vh;
-	grid-gap: 15px;
-	padding: 15px;
-}
-#services > #grid > div {
-	border: 1px solid black;
-	text-align: center;
-	font-size: 2vw;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-rows: 30vw 25vw;
+	grid-gap: 1vw;
+	padding: 1vw;
 }
 #services > #grid > div > img {
 width: 100%;
@@ -280,37 +285,30 @@ height: 100%;
 
 
 
-
 #the_process {
 	background-color: white;
 	/*background-color: palegoldenrod;*/
 	/*background-color: #787878;*/
 
-/*	height: auto;*/
-	padding-bottom: 10vh;
+	height: auto;
+	padding-bottom: 5vw;
 }
 #the_process > p {
-	font-size: 1.1vw;
 }
 
 #the_process > ul {
-	margin-top: 2vh;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
-	width: 70%;
+	width: 100%;
+	font-size: 2.2vw;
 
-	margin-top: 5vh;
+	margin-top: 10vw;
 }
 #the_process > ul > li {
 	display: inline-block;
-	width: 70%;
-	padding-top: 2vh;
-	padding-bottom: 3vh;
-
-	font-size: 1.9vh;
-	line-height: 1.3;
-	text-align: left;
+	width: 80%;
+	padding-bottom: 5vw;
 }
 #the_process > ul > li > img {
 	float: left;
@@ -319,37 +317,50 @@ height: 100%;
 	margin-right: 5%;
 }
 #the_process > ul > li > p {
-	padding-top: 3vh;
+	line-height: 1.1;
+	text-align: left;
 }
 
 
 
 
 #contact {
-	height: 35vh;
-	background-color: black;
+	height: auto;
+	/*height: 35vw;*/
+	background: rgba(0, 0, 0, 0.7);
+	padding-top: 25vw;
+	padding-bottom: 10vw;
 }
 #contact > p {
-	width: 70%;
 	color: #E3BD82;
-	font-size: 5vh;
+	font-size: 6vw;
+
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 #contact > p+p {
-	font-size: 3vh;
-	display: inline;
+	/*position: absolute;*/
+	/*left: 10%;*/
 	text-align: center;
-	margin-left: 30%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 12vw;
+
+	font-size: 3.2vw;
+	display: inline;
 }
 #contact > a {
-	font-size: 3vh;
+	/*right: 10%;*/
+	font-size: 3vw;
 	display: inline;
 	text-align: center;
-		color: #E3BD82;
+	color: #E3BD82;
 }
 
 
 #links > ul {
-	padding-top: 5vh;
+	/*padding-top: 5vw;*/
 	list-style-type: none;
 
 	text-align: center;
@@ -358,10 +369,10 @@ height: 100%;
 }
 #links > ul > li {
   display: inline;
-  padding-left: 3vh;
-  padding-right: 3vh;
+  padding-left: 3vw;
+  padding-right: 3vw;
 }
 #links > ul > li > a > img {
-	height: 10vh;
-	width: 10vh;
+	height: 15vw;
+	width: 15vw;
 }

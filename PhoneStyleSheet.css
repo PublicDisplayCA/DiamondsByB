@@ -170,7 +170,7 @@ header {
 	text-align: center;
 }
 #splash_logo > img {
-	width: 35vw;
+	width: 45vw;
 	padding: 0;
 	padding-bottom: 3vw;
 	margin: 0;
@@ -198,12 +198,12 @@ header {
 	padding-bottom: 10vw;
 }
 #about_B > p {
-	font-size: 4vw;
+	font-size: 4.3vw;
 }
 #about_B > img {
 	display: block;
   margin: 0 auto;
-	width: 50%;
+	width: 80%;
 }
 
 
@@ -220,8 +220,8 @@ header {
 	padding-bottom: 15vw;
 }
 #services > p {
-	font-size: 4vw;
-	padding-bottom: 8vw;
+	font-size: 4.2vw;
+	padding-bottom: 5vw;
 }
 #services > p+h1 {
 	/*font-weight: bold;*/
@@ -236,6 +236,7 @@ header {
 	margin-left: auto;
 	margin-right: auto;
 	/*margin-left: 10%;*/
+
 	display: grid;
 	grid-template-columns: auto auto auto auto;
 	grid-gap: 15px;
@@ -248,7 +249,7 @@ header {
 
 	font-size: 4vw;
 	font-style: italic;
-	font-weight: bold;
+	font-weight: bo;
 }
 
 #services > ul {
@@ -270,16 +271,15 @@ header {
 
 #services > #grid {
 	/*text-align: center;*/
-	display: grid;
-	width: 92%;
-	/*left: 0;*/
+	width: 90%;
+	/*left: 5%;*/
 	margin-left: auto;
 	margin-right: auto;
 
-
+	display: grid;
 	grid-template-columns: 24% 24% 24% 24%;
-	grid-template-rows: 32vw 24vw;
-	grid-gap: 10px;
+	grid-template-rows: 35vw 25vw;
+	grid-gap: 5px;
 	/*padding: 2px;*/
 }
 #services > #grid > div > img {
@@ -308,7 +308,7 @@ height: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	width: 100%;
-	font-size: 3.5vw;
+	font-size: 3.8vw;
 
 	/*margin-top: 10vw;*/
 }
@@ -324,7 +324,6 @@ height: 100%;
 	margin-right: 5%;
 }
 #the_process > ul > li > p {
-	/*font-size: 3.8vw;*/
 	line-height: 1.1;
 	text-align: left;
 }

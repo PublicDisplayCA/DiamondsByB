@@ -62,8 +62,10 @@ body {
 
 section {
 	font-family: 'Lato', sans-serif;
-	display: block;
-	width: 100%;
+	/*display: block;*/
+	width: 65%;
+	margin: 0 auto;
+
 	min-width: 600px;
 }
 
@@ -74,7 +76,7 @@ hr {
 
 }
 hr, p {
-	width: 70%;
+	width: 80%;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
@@ -83,13 +85,13 @@ hr, p {
 	margin-bottom: 3vw;
 	/*width: 60%;*/
 
-	font-size: 1.8vw;
-	line-height: 1.2;
+	font-size: 1.3vw;
+	line-height: 1.3em;
 	/*margin-left: 20%;*/
 }
 
 h1 {
-	padding-top: 10vw;
+	padding-top: 5vw;
 	padding-bottom: 2vw;
 
 	/*margin-left: 20%;*/
@@ -98,7 +100,7 @@ h1 {
 	text-align: center;
 
 	font-weight: bold;
-	font-size: 7vw;
+	font-size: 3vw;
 }
 
 h2 {
@@ -196,18 +198,17 @@ header {
 	/*background-color: #E3BD82;*/
 	/*background-color: #9b9595;*/  /*light-ish grey*/
 	/*height: 150vw;*/
-	height: auto;
+	/*height: auto;*/
 
-	padding-bottom: 5vw;
+	padding-bottom: 2vw;
 }
 #about_B > p {
 	text-align: left;
-	font-size: 3vw;
 }
 #about_B > img {
 	display: block;
   margin: 0 auto;
-	width: 50%;
+	width: 60%;
 }
 
 
@@ -217,39 +218,37 @@ header {
 	/*background-color: #E3BD82;*/
 	/*background-color: black;*/
 	/*opacity: .8;*/
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 0.70);
 	color: E3BD82;
 
-	height: auto;
-	padding-bottom: 15vw;
+	/*height: auto;*/
+	padding-bottom: 5vw;
 }
-#services > p {
-	font-size: 3.3vw;
-	/*padding-bottom: 5vw;*/
-}
+/*#services > p {
+}*/
+
 #services > p+h1 {
 	/*padding-bottom: 5vw;*/
-	font-size: 3vw;
+	font-size: 1.8vw;
 	text-align: center;
 }
 
 #services > #wordgrid {
 	text-align: center;
 	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
-	/*margin-left: 10%;*/
+	margin: 0 auto;
+
 	display: grid;
 	grid-template-columns: auto auto auto auto;
 	grid-gap: 15px;
 	padding: 15px;
-	padding-bottom: 5vw;
+	padding-bottom: 2vw;
 }
 #services > #wordgrid > div {
 	border: none;
 	text-align: center;
 
-	font-size: 3vw;
+	font-size: 1.8vw;
 	font-style: italic;
 	font-weight: bold;
 }
@@ -274,14 +273,14 @@ header {
 #services > #grid {
 	/*text-align: center;*/
 	display: grid;
-	width: 92%;
+	width: 90%;
 	/*left: 0;*/
 	margin-left: auto;
 	margin-right: auto;
 
 
 	grid-template-columns: 24% 24% 24% 24%;
-	grid-template-rows: 32vw 24vw;
+	grid-template-rows: 50% 50%;
 	grid-gap: 10px;
 	/*padding: 2px;*/
 }
@@ -301,16 +300,14 @@ height: 100%;
 	padding-bottom: 2vw;
 }
 #the_process > p {
-	font-size: 4vw;
-	margin-bottom: 20vw;
+	margin-bottom: 10vw;
 }
 
 #the_process > ul {
 	/*text-align: center;*/
-	width: 96%;
-	margin-left: auto;
-	margin-right: auto;
-	font-size: 2.8vw;
+	width: 80%;
+	margin:  0 auto;
+	font-size: 1.3vw;
 
 	/*margin-top: 10vw;*/
 }
@@ -329,45 +326,45 @@ height: 100%;
 }
 
 
-
-
 #contact {
-	height: auto;
+	text-align: center;
+	margin:  0 auto;
+	/*height: auto;*/
 	/*height: 35vw;*/
-	background: rgba(0, 0, 0, 0.7);
-	padding-top: 10vw;
-	padding-bottom: 5vw;
+	/*background: rgba(0, 0, 0, 0.7);*/
+	background-color: none;
+	height: 100%;
+	padding-top: 2vw;
+	/*padding-bottom: 15w;*/
 }
 #contact > p {
 	color: #E3BD82;
-	font-size: 6vw;
+	font-size: 2vw;
+	padding-bottom: 3vw;
 
 	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
+	margin:  0 auto;
 }
 #contact > p+p {
 	/*position: absolute;*/
 	/*left: 10%;*/
 	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-	padding-left: 12vw;
+	margin:  0 auto;
 
-	font-size: 3.2vw;
+	font-size: 2vw;
 	display: inline;
 }
 #contact > a {
 	/*right: 10%;*/
-	font-size: 3vw;
+	font-size: 2vw;
 	display: inline;
-	text-align: center;
+	/*text-align: center;*/
 	color: #E3BD82;
 }
 
 
 #links > ul {
-	/*padding-top: 5vw;*/
+		padding-top: 5vw;
 	list-style-type: none;
 
 	text-align: center;
@@ -380,6 +377,6 @@ height: 100%;
   padding-right: 3vw;
 }
 #links > ul > li > a > img {
-	height: 15vw;
-	width: 15vw;
+	height: 5vw;
+	width: 5vw;
 }
